@@ -14,7 +14,6 @@ public class GameControllerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		enemyHp = 100.0f;
-		enemyHpDisplay.text = "Enemy HP\n" + Mathf.RoundToInt(enemyHp) + "/100";
 	}
 	
 	// Update is called once per frame

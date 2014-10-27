@@ -5,7 +5,7 @@ public class EnemyScript : MonoBehaviour {
 	private GameControllerScript _gcScript;
 	public  float                maxHp ;
 	public  float				 currentHp;
-	public  float 
+	public  int                  level = 1;
 
 	void Start() {
 		_gcScript = GameObject.Find ("GameController").GetComponent<GameControllerScript>();
@@ -16,6 +16,7 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	public void SpawnEnemy() {
-
+		maxHp = 10.0f + (level * 2.5f);
+		currentHp = maxHp;
 	}
 }
